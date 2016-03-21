@@ -1,0 +1,222 @@
+/*-----------------------------------------------------------------------------------*/
+/*	RESET
+/*-----------------------------------------------------------------------------------*/
+
+*{
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent
+}
+#wrapper {
+	width: 990px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+#content {
+	width: 700px;
+	float: right;
+	padding: 20px 0 20px 0;
+}
+
+#sidebar {
+	width: 258px;height:100%;
+	background: #596d7f url(images/noize.png) repeat 100% 0;
+	-webkit-box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.15);
+	-moz-box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.15);
+	box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.15);
+	border-left: 1px solid rgba(0, 0, 0, 0.50);
+	border-right: 1px solid rgba(0, 0, 0, 0.50);
+	float: left;
+	position: fixed;
+	margin-top: -1px;
+	z-index: 100;
+}
+#blog #sidebar {
+	position: relative;
+}
+
+#logo {
+	text-align: left;
+	padding: 40px 32px 0 32px;
+}
+
+#logo a {
+	border: none;
+}
+
+#logo img {
+	display: inline;
+}
+
+#sidebar ul.share {
+	line-height: 1;
+	text-align: left;
+}
+
+#sidebar ul.share li {
+	background: none;
+	padding: 0;
+	display: inline-block;
+	padding-right: 3px;
+}
+
+.sidebox {
+	width: 200px; 
+	margin: 0 auto 50px auto;
+}
+
+.sidebox h3 {
+	text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
+	color: #f0f0f0;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	GENERAL
+/*-----------------------------------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Amaranth', sans-serif;
+	color: #4a4a4a;
+	font-weight: normal;
+	margin: 0 0 10px 0;
+}
+h1 {
+	font-size: 22px;
+	line-height: 26px;
+}
+h2 {
+	font-size: 20px;
+	line-height: 24px;
+}
+
+h3 {
+	font-size: 18px;
+	line-height: 22px;
+}
+h4 {
+	font-size: 16px;
+	line-height: 20px;
+}
+h5 {
+	font-size: 14px;
+	line-height: 20px;
+}
+h6 {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	MENU
+/*-----------------------------------------------------------------------------------*/
+
+#menu {
+	float: left;
+	text-align: left;
+	font-family: 'Amaranth', sans-serif;
+	font-size: 17px;
+	margin-top: 40px;
+	margin-bottom: 50px;
+	position: relative;
+	z-index: 100;
+	padding: 0 0 0 24px;
+	text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
+}
+
+.menu-v ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	width: 200px;
+	background: transparent url(images/menu-line.png) no-repeat center bottom;
+}
+ 
+.menu-v ul li{
+	position: relative;
+	padding-right: 5px;
+	background: transparent url(images/menu-line.png) no-repeat center top;
+	padding: 0;
+}
+
+.menu-v ul li a{ 
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 12px 0 10px 20px;
+	padding-right: 17px;
+	background: transparent; 
+	color: #f0f0f0;
+	text-decoration: none;
+	border: none;
+}
+
+.menu-v ul li a.active, .menu-v ul li a.selected, .menu-v ul li a:hover{
+	text-decoration: none;
+	background: transparent url(images/menu-hover.png) repeat-y left top;
+	color: #fff;
+}
+
+.menu-v ul li ul{
+	position: absolute;
+	width: 130px; 
+	top: 0px;
+	font-weight: normal;
+	visibility: hidden;
+	text-align: left;
+	padding: 0 15px 0 15px;
+	margin-left: 0;
+	background: #596d7f url(images/noize.png) repeat top center;
+	-webkit-box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.10);
+	-moz-box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.10);
+	box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.10);
+	border: 1px solid rgba(0, 0, 0, 0.30);
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.menu-v ul li {
+	background: transparent url(images/dropdown-line.png) repeat-x left top;
+}
+
+}
+
+.menu-v ul li a{
+	padding: 12px 0;
+}
+
+.menu-v ul li ul li a.active, .menu-v ul li ul li a.selected, .menu-v ul li ul li a:hover{
+	background: none;
+}
+
+
+* html .menu-v ul li { float: left; height: 1%; }
+* html .menu-v ul li a { height: 1%; }
+
+
+/*-----------------------------------------------------------------------------------*/
+/*	SLIDER
+/*-----------------------------------------------------------------------------------*/
+.line {
+	background: transparent url(images/line.png) repeat-x;
+	height: 2px;
+	padding: 20px 0 0 0;
+	line-break: 0px;
+}
+
+.intro {
+	font-family: 'Droid Serif', serif;
+	font-style: italic;
+	font-size: 17px;
+	color: #585858;
+	line-height: 24px;
+	margin-bottom: 20px;
+}
+.slides{
+	margin-bottom: 20px;
+}
+#div1 {width:762px; height:452px; background:rgba(255,255,255,0.4); position:relative; z-index:2;  }
+#img {width:700px; height:400px; background:url(./imgs/1.jpg) center no-repeat; position:absolute;}
